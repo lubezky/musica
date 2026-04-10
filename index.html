@@ -68,15 +68,42 @@ a {
     border-bottom: 1px solid #ddd;
 }
 
+/* ALBUMS */
+
 .album {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
+.album a {
+    display: inline-block;
+}
+
+/* Hover elegante */
 .album img {
     max-width: 160px;
     display: block;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 12px auto;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.3s ease;
+    border-radius: 4px;
+}
+
+/* EFECTO */
+.album a:hover img {
+    transform: scale(1.04) translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    opacity: 0.95;
+}
+
+/* Título también reacciona */
+.album-title a {
+    transition: letter-spacing 0.3s ease, opacity 0.3s ease;
+}
+
+.album a:hover + .album-title a,
+.album-title a:hover {
+    letter-spacing: 1px;
+    opacity: 0.8;
 }
 
 .album-title {
@@ -88,6 +115,8 @@ a {
     font-size: 0.85rem;
     color: #666;
 }
+
+/* FOOTER */
 
 footer {
     text-align: center;
@@ -121,6 +150,16 @@ footer {
     gap: 14px;
     list-style: none;
     padding: 0;
+}
+
+.social-nav a {
+    border-bottom: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.social-nav a:hover {
+    opacity: 1;
 }
 </style>
 </head>
