@@ -9,20 +9,13 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com/",
-          "image": "https://musica.sergiolubezky.com/foto_sl.png",
-          "sameAs": [
-            "https://lubezky.com/",
-            "https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ",
-            "https://music.apple.com/mx/artist/sergio-lubezky/1865741434",
-            "https://www.youtube.com/@SergioLubezkyMusic"
-          ]
-        }
+      "@type": "Person",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com",
+      "sameAs": [
+        "https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ",
+        "https://music.apple.com/mx/artist/sergio-lubezky/1865741434",
+        "https://www.youtube.com/@SergioLubezkyMusic"
       ]
     }
     </script>
@@ -33,16 +26,15 @@
             display: flex; 
             flex-direction: column; 
             min-height: 100vh; 
-            background-color: #fff; 
+            background: #fff; 
             color: #1a1a1a; 
-            font-family: 'Georgia', serif; 
+            font-family: Georgia, serif; 
             line-height: 1.8; 
         }
 
         main { 
             flex: 1; 
             display: flex; 
-            align-items: center; 
             justify-content: center; 
             padding: 60px 20px; 
         }
@@ -54,28 +46,27 @@
         }
 
         h1 { 
-            font-size: 1.5rem;
-            font-weight: bold; 
-            margin-bottom: 16px; 
+            font-size: 1.4rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-        }
-
-        h2 {
-            font-size: 1rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-top: 60px;
             margin-bottom: 20px;
         }
 
-        p { margin-bottom: 12px; }
+        h2 {
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 60px;
+            margin-bottom: 25px;
+            color: #777;
+        }
 
-        .content-box a { 
-            color: #000; 
-            text-decoration: none; 
-            font-weight: bold; 
-            border-bottom: 1px solid #ddd; 
+        p { margin-bottom: 14px; }
+
+        a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1px solid #ddd;
         }
 
         .album {
@@ -83,61 +74,49 @@
         }
 
         .album img {
-            width: 100%;
-            max-width: 220px;
+            max-width: 180px;
             display: block;
-            margin: 0 auto 16px auto;
+            margin: 0 auto 15px auto;
         }
 
         .album-title {
             font-weight: bold;
         }
 
-        .album-desc {
+        footer {
+            padding: 60px 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .name {
             font-size: 0.95rem;
-            color: #555;
-        }
-
-        footer { 
-            padding: 60px 20px; 
-            text-align: center; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-        }
-
-        .profile-img { 
-            width: 75px; 
-            height: 75px; 
-            border-radius: 50%; 
-            margin-bottom: 10px; 
-            object-fit: cover; 
-            border: 1px solid #eee; 
-        }
-
-        .name { 
-            font-weight: 600; 
-            font-size: 1rem; 
-            letter-spacing: 1.5px; 
-            text-transform: uppercase; 
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
         }
 
         .footer-bio {
-            max-width: 650px;
-            margin: 0 auto 30px auto; 
-            font-size: 0.95rem;
-            color: #444;
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 0.9rem;
+            color: #555;
         }
 
-        .social-nav { 
-            list-style: none; 
-            padding: 0; 
-            display: flex; 
-            justify-content: center; 
-            gap: 12px; 
-            font-size: 0.85rem; 
+        .social-nav {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            font-size: 0.85rem;
+            list-style: none;
+            padding: 0;
         }
-
-        .social-nav a { color: #666; text-decoration: none; }
-        .social-nav a:hover { color: #000; }
     </style>
 </head>
 
@@ -150,50 +129,42 @@
 
 <p>El sonido de lo que no digo.</p>
 
-<p>Hay cosas que no se pueden explicar, solo se pueden sentir.</p>
+<p>
+Hay cosas que no se pueden explicar, solo se pueden sentir. La música nace precisamente de ese espacio: de la necesidad de darle forma y nombre a lo que a veces no los tiene.
+</p>
 
-<p>Por eso hago música: para darle forma y nombre a lo que a veces no tiene ninguno.</p>
+<p>
+Este lugar es otra forma de decir lo mismo que atraviesa todo lo demás, pero desde un lenguaje distinto. Aquí conviven mis dudas, mis etapas y aquellas verdades que solo logran expresarse a través del sonido.
+</p>
 
-<p>Este espacio es mi otra voz.</p>
-
-<p>Es una invitación a dejar de intentar entenderlo todo y simplemente permitirte vibrar.</p>
+<p>
+Más que intentar entenderlo, la invitación es a escucharlo y, si hace sentido, permitirte experimentarlo.
+</p>
 
 <h2>Publicados</h2>
 
 <div class="album">
-    <img src="ascenso.jpg" alt="Ascenso Interior">
-
-    <p class="album-title">Ascenso Interior</p>
-
-    <p class="album-desc">
-        Una exploración introspectiva sobre el proceso de evolución interior.
-    </p>
-
-    <p>
-        <a href="https://music.amazon.com.mx/albums/B0GVZW35NB" target="_blank">Amazon</a> · 
-        <a href="https://music.apple.com/mx/album/todo-lo-que-soy-lecciones-de-kabbalah/1890531152" target="_blank">Apple</a> · 
-        <a href="https://www.claromusica.com/embed/album/84549229/" target="_blank">Claro</a> · 
-        <a href="https://open.spotify.com/album/4IKAIDrKHVpNQbGSEtwaWe" target="_blank">Spotify</a> ·
-        <a href="https://music.youtube.com/playlist?list=OLAK5uy_kon6dnPqhRiRYhHNJlIbmw64iTB5hjrI4" target="_blank">YouTube</a>
-    </p>
+<img src="ascenso.jpg">
+<p class="album-title">Ascenso Interior</p>
+<p>
+<a href="https://music.amazon.com.mx/albums/B0GVZW35NB" target="_blank">Amazon</a> · 
+<a href="https://music.apple.com/mx/album/todo-lo-que-soy-lecciones-de-kabbalah/1890531152" target="_blank">Apple</a> · 
+<a href="https://www.claromusica.com/embed/album/84549229/" target="_blank">Claro</a> · 
+<a href="https://open.spotify.com/album/4IKAIDrKHVpNQbGSEtwaWe" target="_blank">Spotify</a> · 
+<a href="https://music.youtube.com/playlist?list=OLAK5uy_kon6dnPqhRiRYhHNJlIbmw64iTB5hjrI4" target="_blank">YouTube</a>
+</p>
 </div>
 
 <div class="album">
-    <img src="aquiestoy.jpg" alt="Aquí Estoy">
-
-    <p class="album-title">Aquí Estoy</p>
-
-    <p class="album-desc">
-        Un tributo a mis antepasados, a mis padres, hermanos, amigos y amores que han dejado huella en quien soy.
-    </p>
-
-    <p>
-        <a href="https://music.amazon.com.mx/albums/B0GVWSFLKC" target="_blank">Amazon</a> ·
-        <a href="https://music.apple.com/mx/album/aqu%C3%AD-estoy/1890348371" target="_blank">Apple</a> · 
-        <a href="https://www.claromusica.com/embed/album/84498363/" target="_blank">Claro</a> · 
-        <a href="https://open.spotify.com/album/3of0qtchk0cUGyUMEpfE1K" target="_blank">Spotify</a> ·
-        <a href="https://music.youtube.com/playlist?list=OLAK5uy_mnOUOli0HAdMDFbd7OZFPe8V_mJvkdXmQ" target="_blank">YouTube</a>
-    </p>
+<img src="aquiestoy.jpg">
+<p class="album-title">Aquí Estoy</p>
+<p>
+<a href="https://music.amazon.com.mx/albums/B0GVWSFLKC" target="_blank">Amazon</a> ·
+<a href="https://music.apple.com/mx/album/aqu%C3%AD-estoy/1890348371" target="_blank">Apple</a> · 
+<a href="https://www.claromusica.com/embed/album/84498363/" target="_blank">Claro</a> · 
+<a href="https://open.spotify.com/album/3of0qtchk0cUGyUMEpfE1K" target="_blank">Spotify</a> · 
+<a href="https://music.youtube.com/playlist?list=OLAK5uy_mnOUOli0HAdMDFbd7OZFPe8V_mJvkdXmQ" target="_blank">YouTube</a>
+</p>
 </div>
 
 <h2>En proceso</h2>
