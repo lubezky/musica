@@ -1,127 +1,283 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sergio Lubezky | Música</title>
-<meta name="description" content="El sonido de lo que no digo. Música de Sergio Lubezky.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música | Sergio Lubezky</title>
+    <meta name="description" content="El sonido de lo que no digo. Exploraciones sonoras y composiciones de Sergio Lubezky.">
+    <meta name="author" content="Sergio Lubezky">
+    
+    <link rel="canonical" href="https://musica.sergiolubezky.com/" />
 
-<style>
-body { margin:0;font-family:Georgia,serif;color:#1a1a1a;background:#fff;}
-main { max-width:700px;margin:0 auto;padding:60px 20px 30px;}
-.content-box { font-size:1.2rem;line-height:1.8;text-align:center;}
-h1 { font-size:1.4rem;letter-spacing:2px;text-transform:uppercase;text-align:center;}
-h2 { font-size:0.9rem;letter-spacing:2px;text-transform:uppercase;color:#777;margin-top:60px;text-align:center;}
-p { margin-bottom:12px;}
-a { color:#000;text-decoration:none;border-bottom:1px solid #ddd;}
-.album { margin-bottom:45px;text-align:center;}
-.album a { display:inline-block;}
-.album img { max-width:160px;display:block;margin:0 auto 12px auto;border-radius:4px;}
-.album-title { font-weight:bold;margin-bottom:5px;}
-.platforms { font-size:0.85rem;color:#666;}
-footer { text-align:center;padding:60px 20px;font-family:Arial,sans-serif;}
-.profile-img { width:80px;height:80px;border-radius:50%;border:2px solid #444;padding:3px;background:#fff;margin-bottom:12px;}
-.name { font-size:0.95rem;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:20px;}
-.footer-bio { max-width:620px;margin:0 auto 30px auto;font-size:1.05rem;line-height:1.7;color:#333;}
-.social-nav { display:flex;justify-content:center;gap:16px;list-style:none;padding:0;font-size:0.85rem;color:#777;}
-</style>
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Música | Sergio Lubezky" />
+    <meta property="og:description" content="El sonido de lo que no digo. Un lenguaje distinto para expresar lo que las palabras no alcanzan." />
+    <meta property="og:url" content="https://musica.sergiolubezky.com/" />
+    <meta property="og:site_name" content="Sergio Lubezky Música" />
+    <meta property="og:image" content="https://lubezky.com/foto-sergio.jpg" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://lubezky.com/#sergio",
+          "name": "Sergio Lubezky",
+          "url": "https://lubezky.com/",
+          "sameAs": [
+            "https://music.apple.com/mx/artist/sergio-lubezky/1865741434",
+            "https://www.youtube.com/@SergioLubezkyMusic",
+            "https://lubezky.com"
+          ],
+          "jobTitle": "Compositor Musical"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://musica.sergiolubezky.com/#website",
+          "url": "https://musica.sergiolubezky.com/",
+          "name": "Música de Sergio Lubezky",
+          "publisher": { "@id": "https://lubezky.com/#sergio" },
+          "description": "Portafolio musical y discografía de Sergio Lubezky."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* --- ESTÉTICA MASTER LUBEZKY --- */
+        body { 
+            margin: 0; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+            background-color: #fff; 
+            color: #1a1a1a; 
+            font-family: 'Georgia', serif; 
+            line-height: 1.8; 
+            -webkit-font-smoothing: antialiased;
+        }
+
+        main { 
+            flex: 1; 
+            max-width: 700px; 
+            margin: 0 auto; 
+            padding: 60px 20px; 
+        }
+
+        .content-box { 
+            text-align: center; 
+            font-size: 1.2rem; 
+            margin-bottom: 50px;
+        }
+
+        h1 { 
+            font-size: 1.5rem;
+            font-weight: bold; 
+            margin-bottom: 24px; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        h2 { 
+            font-size: 0.9rem; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            color: #888; 
+            margin-top: 60px; 
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        p { margin-bottom: 12px; }
+
+        a { 
+            color: #000; 
+            text-decoration: none; 
+            font-weight: bold;
+            border-bottom: 1px solid #ddd; 
+            transition: border-color 0.3s;
+        }
+
+        a:hover { border-bottom: 1px solid #000; }
+
+        /* ÁLBUMES */
+        .album { 
+            margin-bottom: 60px; 
+            text-align: center; 
+        }
+
+        .album img { 
+            max-width: 200px; 
+            display: block; 
+            margin: 0 auto 15px auto; 
+            border-radius: 2px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .album img:hover { transform: scale(1.02); }
+
+        .album-title { 
+            font-size: 1.1rem;
+            font-weight: bold; 
+            margin-bottom: 5px; 
+        }
+
+        .platforms { 
+            font-size: 0.85rem; 
+            color: #666; 
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* FOOTER STANDARDIZADO LUBEZKY */
+        footer { 
+            padding: 60px 20px; 
+            text-align: center; 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            border-top: 1px solid #f2f2f2;
+        }
+
+        .profile-img { 
+            width: 75px; height: 75px; 
+            border-radius: 50%; margin-bottom: 10px; 
+            object-fit: cover; border: 1px solid #eee; 
+        }
+
+        .name-link { text-decoration: none; color: inherit; display: block; margin-bottom: 2px; border: none; }
+        .name { font-weight: 600; font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; }
+
+        .footer-bio {
+            max-width: 650px; margin: 0 auto 30px auto; 
+            font-size: 0.95rem; color: #444; line-height: 1.7;
+        }
+
+        .footer-bio p { margin: 0; }
+
+        .footer-bio a {
+            color: #1a1a1a; text-decoration: none; font-weight: 600;
+            border-bottom: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        .footer-bio a:hover { border-bottom: 1px solid #1a1a1a; }
+
+        .social-nav { 
+            list-style: none; padding: 0; margin: 0; 
+            display: flex; flex-wrap: wrap; justify-content: center; 
+            gap: 12px; font-size: 0.85rem; 
+        }
+
+        .social-nav a { color: #666; text-decoration: none; border: none; font-weight: normal; }
+        .social-nav a:hover { color: #000; }
+        .social-nav li:not(:last-child)::after { 
+            content: "-"; margin-left: 12px; color: #ccc; 
+        }
+    </style>
 </head>
 
 <body>
 
 <main>
+    <h1>Música</h1>
 
-<h1>Música</h1>
+    <div class="content-box">
+        <p>El sonido de lo que no digo.</p>
+        <p>Hay cosas que no se pueden explicar, solo se pueden sentir.</p>
+        <p>Este lugar es otra forma de decir lo mismo desde otro lenguaje.</p>
+    </div>
 
-<div class="content-box">
-<p>El sonido de lo que no digo.</p>
-<p>Hay cosas que no se pueden explicar, solo se pueden sentir.</p>
-<p>Este lugar es otra forma de decir lo mismo desde otro lenguaje.</p>
-</div>
+    <h2>Publicados</h2>
 
-<h2>Publicados</h2>
+    <div class="album">
+        <a href="/ascenso-interior/" style="border:none;"><img src="ascenso.jpg" alt="Álbum Ascenso Interior"></a>
+        <p class="album-title"><a href="/ascenso-interior/">Ascenso Interior</a></p>
+    </div>
 
-<div class="album">
-<a href="/ascenso-interior/"><img src="ascenso.jpg"></a>
-<p class="album-title"><a href="/ascenso-interior/">Ascenso Interior</a></p>
-</div>
+    <div class="album">
+        <a href="/aqui-estoy/" style="border:none;"><img src="aquiestoy.jpg" alt="Álbum Aquí Estoy"></a>
+        <p class="album-title"><a href="/aqui-estoy/">Aquí Estoy</a></p>
+    </div>
 
-<div class="album">
-<a href="/aqui-estoy/"><img src="aquiestoy.jpg"></a>
-<p class="album-title"><a href="/aqui-estoy/">Aquí Estoy</a></p>
-</div>
+    <div class="album">
+        <a href="/a-solas-conmigo/" style="border:none;"><img src="asolas.jpg" alt="Álbum A Solas Conmigo"></a>
+        <p class="album-title"><a href="/a-solas-conmigo/">A Solas Conmigo</a></p>
+    </div>
 
-<!-- MOVIDO -->
-<div class="album">
-<a href="/a-solas-conmigo/"><img src="asolas.jpg"></a>
-<p class="album-title"><a href="/a-solas-conmigo/">A Solas Conmigo</a></p>
-</div>
+    <h2>En proceso</h2>
 
-<h2>En proceso</h2>
+    <div class="album">
+        <a href="/veces/" style="border:none;"><img src="veces.jpg" alt="Próximo lanzamiento: A veces… Amor"></a>
+        <p class="album-title"><a href="/veces/">A veces… Amor</a></p>
+        <p class="platforms">Disponible — 5 de junio de 2026</p>
+    </div>
 
-<!-- NUEVO -->
-<div class="album">
-<a href="/veces/"><img src="veces.jpg"></a>
-<p class="album-title"><a href="/veces/">A veces… Amor</a></p>
-<p class="platforms">Disponible — 5 de junio de 2026</p>
-</div>
+    <div class="album">
+        <a href="/enfoque-manual/" style="border:none;"><img src="enfoque.jpg" alt="Próximo lanzamiento: Enfoque Manual"></a>
+        <p class="album-title"><a href="/enfoque-manual/">Enfoque Manual</a></p>
+        <p class="platforms">Disponible — 3 de julio de 2026</p>
+    </div>
 
-<div class="album">
-<a href="/enfoque-manual/"><img src="enfoque.jpg"></a>
-<p class="album-title"><a href="/enfoque-manual/">Enfoque Manual</a></p>
-<p class="platforms">Disponible — 3 de julio de 2026</p>
-</div>
+    <div class="album">
+        <a href="/acapulco/" style="border:none;"><img src="acapulco.jpg" alt="Próximo lanzamiento: Acapulco"></a>
+        <p class="album-title"><a href="/acapulco/">Acapulco, El verano que no fue</a></p>
+        <p class="platforms">Disponible — 14 de agosto de 2026</p>
+    </div>
 
-<div class="album">
-<a href="/acapulco/"><img src="acapulco.jpg"></a>
-<p class="album-title"><a href="/acapulco/">Acapulco, El verano que no fue</a></p>
-<p class="platforms">Disponible — 14 de agosto de 2026</p>
-</div>
+    <div class="album">
+        <a href="/tercera-persona/" style="border:none;"><img src="tercera.jpg" alt="Próximo lanzamiento: Tercera Persona"></a>
+        <p class="album-title"><a href="/tercera-persona/">Tercera Persona</a></p>
+        <p class="platforms">Disponible — 11 de septiembre de 2026</p>
+    </div>
 
-<div class="album">
-<a href="/tercera-persona/"><img src="tercera.jpg"></a>
-<p class="album-title"><a href="/tercera-persona/">Tercera Persona</a></p>
-<p class="platforms">Disponible — 11 de septiembre de 2026</p>
-</div>
+    <div class="album">
+        <a href="/calle/" style="border:none;"><img src="calle.jpg" alt="Próximo lanzamiento: Mi Calle"></a>
+        <p class="album-title"><a href="/calle/">Mi Calle</a></p>
+        <p class="platforms">Disponible — 30 de septiembre de 2026</p>
+    </div>
 
-<div class="album">
-<a href="/calle/"><img src="calle.jpg"></a>
-<p class="album-title"><a href="/calle/">Mi Calle</a></p>
-<p class="platforms">Disponible — 30 de septiembre de 2026</p>
-</div>
+    <div class="album">
+        <a href="/medallo/" style="border:none;"><img src="medallo.jpg" alt="Próximo lanzamiento: Todos Somos Medallo"></a>
+        <p class="album-title"><a href="/medallo/">Todos Somos Medallo</a></p>
+        <p class="platforms">Disponible — 6 de noviembre de 2026</p>
+    </div>
 
-<div class="album">
-<a href="/medallo/"><img src="medallo.jpg"></a>
-<p class="album-title"><a href="/medallo/">Todos Somos Medallo</a></p>
-<p class="platforms">Disponible — 6 de noviembre de 2026</p>
-</div>
-
-<div class="album">
-<a href="/luz/"><img src="luz.jpg"></a>
-<p class="album-title"><a href="/luz/">Luz Prestada</a></p>
-<p class="platforms">Disponible — 18 de diciembre de 2026</p>
-</div>
+    <div class="album">
+        <a href="/luz/" style="border:none;"><img src="luz.jpg" alt="Próximo lanzamiento: Luz Prestada"></a>
+        <p class="album-title"><a href="/luz/">Luz Prestada</a></p>
+        <p class="platforms">Disponible — 18 de diciembre de 2026</p>
+    </div>
 
 </main>
 
 <footer>
+    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
+    
+    <a href="https://lubezky.com" class="name-link">
+        <span class="name">Sergio Lubezky A.</span>
+    </a>
 
-<img src="foto_sl.png" class="profile-img">
-
-<div class="name">Sergio Lubezky</div>
-
-<div class="footer-bio">
-<p>La música es otra forma de comunicar lo que no siempre se puede decir con palabras.</p>
-</div>
-
-<ul class="social-nav">
-<li><a href="https://music.amazon.com.mx/artists/B0GDNRJZJ8/sergio-lubezky">Amazon Music</a></li>
-<li><a href="https://music.apple.com/mx/artist/sergio-lubezky/1865741434">Apple Music</a></li>
-<li><a href="https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ">Spotify</a></li>
-<li><a href="https://www.youtube.com/@SergioLubezkyMusic">YouTube Oficial</a></li>
-<li><a href="https://lubezky.com">Ecosistema Sergio Lubezky</a></li>
-</ul>
-
+    <div class="footer-bio">
+        <p>
+            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+            Exploro la <a href="https://inteligencia.com">Inteligencia</a>, 
+            la <a href="https://liderazgointerino.com">Dirección Interina</a>, 
+            la narrativa visual en <a href="https://coachdefoto.com">Coach de Foto</a> 
+            y la música como otra forma de <a href="https://musica.sergiolubezky.com">comunicar</a>, 
+            bajo una misma premisa: entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
+        </p>
+    </div>
+    
+    <ul class="social-nav">
+        <li><a href="https://music.amazon.com.mx/artists/B0GDNRJZJ8/sergio-lubezky" target="_blank">Amazon Music</a></li>
+        <li><a href="https://music.apple.com/mx/artist/sergio-lubezky/1865741434" target="_blank">Apple Music</a></li>
+        <li><a href="https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ" target="_blank">Spotify</a></li>
+        <li><a href="https://www.youtube.com/@SergioLubezkyMusic" target="_blank">YouTube</a></li>
+        <li><a href="https://lubezky.com">Lubezky.com</a></li>
+    </ul>
 </footer>
 
 </body>
