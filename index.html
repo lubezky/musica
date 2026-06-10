@@ -6,7 +6,6 @@
     <title>Música | Sergio Lubezky</title>
     <meta name="description" content="El sonido de lo que no digo. Exploraciones sonoras y composiciones de Sergio Lubezky.">
     <meta name="author" content="Sergio Lubezky">
-    
     <link rel="canonical" href="https://musica.sergiolubezky.com/" />
 
     <meta property="og:locale" content="es_MX" />
@@ -17,186 +16,45 @@
     <meta property="og:site_name" content="Sergio Lubezky Música" />
     <meta property="og:image" content="https://lubezky.com/foto-sergio.jpg" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@slubezky" />
-    <meta name="twitter:creator" content="@slubezky" />
-    <meta name="twitter:title" content="Música | Sergio Lubezky" />
-    <meta name="twitter:description" content="El sonido de lo que no digo. Un lenguaje distinto para expresar lo que las palabras no alcanzan." />
-    <meta name="twitter:image" content="https://lubezky.com/foto-sergio.jpg" />
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://lubezky.com/#sergio",
-          "name": "Sergio Lubezky",
-          "url": "https://lubezky.com/",
-          "jobTitle": "Compositor Musical",
-          "sameAs": [
-            "https://lubezky.com/",
-            "https://elmismobarco.com/",
-            "https://inteligencia.com/",
-            "https://unnuevopuntodevista.com/",
-            "https://liderazgointerino.com/",
-            "https://coachdefoto.com/",
-            "https://musica.sergiolubezky.com/",
-            "https://www.linkedin.com/in/sergiolubezky/",
-            "https://x.com/slubezky",
-            "https://www.facebook.com/sergiolubezky/",
-            "https://www.instagram.com/sergiolubezky/",
-            "https://music.apple.com/mx/artist/sergio-lubezky/1865741434",
-            "https://www.youtube.com/@SergioLubezkyMusic"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://musica.sergiolubezky.com/#website",
-          "url": "https://musica.sergiolubezky.com/",
-          "name": "Música de Sergio Lubezky",
-          "description": "Portafolio musical y discografía de Sergio Lubezky.",
-          "publisher": { "@id": "https://lubezky.com/#sergio" },
-          "accountablePerson": { "@id": "https://lubezky.com/#sergio" }
-        }
-      ]
-    }
-    </script>
-
     <style>
-        /* --- ESTÉTICA MASTER LUBEZKY --- */
-        body { 
-            margin: 0; 
-            display: flex; 
-            flex-direction: column; 
-            min-height: 100vh; 
-            background-color: #fff; 
-            color: #1a1a1a; 
-            font-family: 'Georgia', serif; 
-            line-height: 1.8; 
-            -webkit-font-smoothing: antialiased;
-        }
+        body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-color: #fff; color: #1a1a1a; font-family: 'Georgia', serif; line-height: 1.8; -webkit-font-smoothing: antialiased; }
+        main { flex: 1; max-width: 800px; margin: 0 auto; padding: 80px 20px 40px 20px; }
+        .content-box { text-align: center; font-size: 1.15rem; margin-bottom: 40px; }
+        .content-box p { text-align: center; margin-bottom: 12px; }
+        
+        h1 { font-size: 2rem; font-weight: bold; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px; text-align: center; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        h2 { font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; color: #888; margin-top: 50px; margin-bottom: 30px; text-align: center; font-family: 'Helvetica Neue', Arial, sans-serif; border-bottom: 1px solid #f2f2f2; padding-bottom: 10px; }
 
-        main { 
-            flex: 1; 
-            max-width: 700px; 
-            margin: 0 auto; 
-            padding: 60px 20px; 
-        }
+        .album-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px 30px; margin-bottom: 40px; }
+        .album { text-align: center; display: flex; flex-direction: column; align-items: center; }
+        .album img { max-width: 200px; width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 2px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .album img:hover { transform: scale(1.03); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+        .album-title { font-size: 1.05rem; font-weight: bold; margin: 0 0 2px 0; font-family: 'Georgia', serif; }
+        .album-title a { color: #1a1a1a; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.3s; }
+        .album-title a:hover { border-bottom: 1px solid #1a1a1a; }
+        .upc-code { font-size: 0.8rem; color: #666; font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0 0 4px 0; letter-spacing: 0.5px; }
+        .platforms { font-size: 0.8rem; color: #999; font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; text-transform: uppercase; letter-spacing: 0.5px; }
 
-        .content-box { 
-            text-align: center; 
-            font-size: 1.2rem; 
-            margin-bottom: 50px;
-        }
-
-        h1 { 
-            font-size: 1.5rem;
-            font-weight: bold; 
-            margin-bottom: 24px; 
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-align: center;
-        }
-
-        h2 { 
-            font-size: 0.9rem; 
-            letter-spacing: 2px; 
-            text-transform: uppercase; 
-            color: #888; 
-            margin-top: 60px; 
-            margin-bottom: 30px;
-            text-align: center;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        p { margin-bottom: 12px; }
-
-        a { 
-            color: #000; 
-            text-decoration: none; 
-            font-weight: bold;
-            border-bottom: 1px solid #ddd; 
-            transition: border-color 0.3s;
-        }
-
-        a:hover { border-bottom: 1px solid #000; }
-
-        /* ÁLBUMES */
-        .album { 
-            margin-bottom: 60px; 
-            text-align: center; 
-        }
-
-        .album img { 
-            max-width: 200px; 
-            display: block; 
-            margin: 0 auto 15px auto; 
-            border-radius: 2px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-        }
-
-        .album img:hover { transform: scale(1.02); }
-
-        .album-title { 
-            font-size: 1.1rem;
-            font-weight: bold; 
-            margin-bottom: 5px; 
-        }
-
-        .platforms { 
-            font-size: 0.85rem; 
-            color: #666; 
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        /* FOOTER STANDARDIZADO LUBEZKY */
-        footer { 
-            padding: 60px 20px; 
-            text-align: center; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-            border-top: 1px solid #f2f2f2;
-        }
-
-        .profile-img { 
-            width: 75px; height: 75px; 
-            border-radius: 50%; margin-bottom: 10px; 
-            object-fit: cover; border: 1px solid #eee; 
-        }
-
-        .name-link { text-decoration: none; color: inherit; display: block; margin-bottom: 2px; border: none; }
-        .name { font-weight: 600; font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; }
-
-        .footer-bio {
-            max-width: 650px; margin: 0 auto 30px auto; 
-            font-size: 0.95rem; color: #444; line-height: 1.7;
-        }
-
-        .footer-bio p { margin: 0; }
-
-        .footer-bio a {
-            color: #1a1a1a; text-decoration: none; font-weight: 600;
-            border-bottom: 1px solid #eee;
-            transition: all 0.3s ease;
-        }
-
-        .footer-bio a:hover { border-bottom: 1px solid #1a1a1a; }
-
-        .social-nav { 
-            list-style: none; padding: 0; margin: 0; 
-            display: flex; flex-wrap: wrap; justify-content: center; 
-            gap: 12px; font-size: 0.85rem; 
-        }
-
-        .social-nav a { color: #666; text-decoration: none; border: none; font-weight: normal; }
-        .social-nav a:hover { color: #000; }
-        .social-nav li:not(:last-child)::after { 
-            content: "-"; margin-left: 12px; color: #ccc; 
-        }
+        footer { padding: 60px 20px 40px 20px; background-color: #ffffff; border-top: 1px solid #f2f2f2; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.9rem; line-height: 1.6; }
+        .footer-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; text-align: left; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; } }
+        .footer-col h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-top: 0; margin-bottom: 20px; }
+        .footer-col p { color: #555; margin: 0; font-size: 0.9rem; }
+        .footer-col ul { list-style: none; padding: 0; margin: 0; }
+        .footer-col ul li { margin-bottom: 12px; }
+        .footer-col ul li a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #eee; transition: all 0.3s; }
+        .footer-col ul li a:hover { border-bottom: 1px solid #1a1a1a; }
+        .footer-col ul li a.current-location { color: #d32f2f !important; border-bottom: 1px solid #f9ebeb; }
+        .footer-col ul li a.current-location:hover { border-bottom: 1px solid #d32f2f; }
+        .footer-socials { display: flex; gap: 15px; margin-top: 20px; }
+        @media (max-width: 768px) { .footer-socials { justify-content: center; } }
+        .footer-socials a { color: #666; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .footer-socials a:hover { color: #000; }
+        
+        .footer-bottom { max-width: 900px; margin: 25px auto 0 auto; padding-top: 20px; border-top: 1px solid #f9f9f9; text-align: center; font-size: 0.8rem; color: #999; }
+        .footer-bottom p { text-align: center; margin: 0 auto; display: block; }
     </style>
 </head>
-
 <body>
 
 <main>
@@ -205,96 +63,116 @@
     <div class="content-box">
         <p>El sonido de lo que no digo.</p>
         <p>Hay cosas que no se pueden explicar, solo se pueden sentir.</p>
-        <p>Este lugar es otra forma de decir lo mismo desde otro lenguaje.</p>
+        <p>Este lugar es otra forma de decir lo mismo desde un lenguaje distinto.</p>
     </div>
 
     <h2>Publicados</h2>
-
-    <div class="album">
-        <a href="/ascenso-interior/" style="border:none;"><img src="ascenso.jpg" alt="Álbum Ascenso Interior"></a>
-        <p class="album-title"><a href="/ascenso-interior/">Ascenso Interior</a></p>
+    <div class="album-grid">
+        <div class="album">
+            <a href="/todo-lo-que-soy/"><img src="ascenso.jpg" alt="Álbum Todo lo que Soy"></a>
+            <p class="album-title"><a href="/todo-lo-que-soy/">Todo lo que Soy</a></p>
+            <p class="upc-code">UPC: 823000188857</p>
+            <p class="platforms">Lecciones de Kabbalah</p>
+        </div>
+        <div class="album">
+            <a href="/aqui-estoy/"><img src="aquiestoy.jpg" alt="Álbum Aquí Estoy"></a>
+            <p class="album-title"><a href="/aqui-estoy/">Aquí Estoy</a></p>
+            <p class="upc-code">UPC: 823000185405</p>
+            <p class="platforms">Balada Pop / Cantautor</p>
+        </div>
+        <div class="album">
+            <a href="/a-solas-conmigo/"><img src="asolas.jpg" alt="Álbum A Solas Conmigo"></a>
+            <p class="album-title"><a href="/a-solas-conmigo/">A Solas Conmigo</a></p>
+            <p class="upc-code">UPC: 0672896244532</p>
+            <p class="platforms">Refugio Acústico</p>
+        </div>
+        <div class="album">
+            <a href="/veces/"><img src="veces.jpg" alt="Álbum A veces… Amor"></a>
+            <p class="album-title"><a href="/veces/">A veces… Amor</a></p>
+            <p class="upc-code">UPC: 0672896148915</p>
+            <p class="platforms">Alternative Pop</p>
+        </div>
     </div>
 
-    <div class="album">
-        <a href="/aqui-estoy/" style="border:none;"><img src="aquiestoy.jpg" alt="Álbum Aquí Estoy"></a>
-        <p class="album-title"><a href="/aqui-estoy/">Aquí Estoy</a></p>
+    <h2>En proceso (Lanzamientos 2026)</h2>
+    <div class="album-grid">
+        <div class="album">
+            <a href="/enfoque-manual/"><img src="enfoque.jpg" alt="Álbum Enfoque Manual"></a>
+            <p class="album-title"><a href="/enfoque-manual/">Enfoque Manual</a></p>
+            <p class="upc-code">UPC: 0672896203447</p>
+            <p class="platforms">3 de jul, 2026</p>
+        </div>
+        <div class="album">
+            <a href="/acapulco/"><img src="acapulco.jpg" alt="Álbum Acapulco"></a>
+            <p class="album-title"><a href="/acapulco/">Acapulco, El Verano que No Fue</a></p>
+            <p class="upc-code">UPC: 0672896203447</p>
+            <p class="platforms">14 de ago, 2026</p>
+        </div>
+        <div class="album">
+            <a href="/tercera-persona/"><img src="tercera.jpg" alt="Álbum Tercera Persona"></a>
+            <p class="album-title"><a href="/tercera-persona/">Tercera Persona</a></p>
+            <p class="upc-code">UPC: 0672896218175</p>
+            <p class="platforms">11 de sep, 2026</p>
+        </div>
+        <div class="album">
+            <a href="/calle/"><img src="calle.jpg" alt="Álbum Mi Calle"></a>
+            <p class="album-title"><a href="/calle/">Mi Calle</a></p>
+            <p class="upc-code">UPC: 0672896221311</p>
+            <p class="platforms">30 de sep, 2026</p>
+        </div>
+        <div class="album">
+            <a href="/medallo/"><img src="medallo.jpg" alt="Álbum Todos Somos Medallo"></a>
+            <p class="album-title"><a href="/medallo/">Todos Somos Medallo</a></p>
+            <p class="upc-code">UPC: 0672896248660</p>
+            <p class="platforms">6 de nov, 2026</p>
+        </div>
+        <div class="album">
+            <a href="/luz/"><img src="luz.jpg" alt="Álbum Luz Prestada"></a>
+            <p class="album-title"><a href="/luz/">Luz Prestada</a></p>
+            <p class="upc-code">UPC: 0672896247120</p>
+            <p class="platforms">18 de dic, 2026</p>
+        </div>
     </div>
-
-    <div class="album">
-        <a href="/a-solas-conmigo/" style="border:none;"><img src="asolas.jpg" alt="Álbum A Solas Conmigo"></a>
-        <p class="album-title"><a href="/a-solas-conmigo/">A Solas Conmigo</a></p>
-    </div>
-
-    <div class="album">
-        <a href="/veces/" style="border:none;"><img src="veces.jpg" alt="Álbum A veces… Amor"></a>
-        <p class="album-title"><a href="/veces/">A veces… Amor</a></p>
-    </div>
-
-    <h2>En proceso</h2>
-
-    <div class="album">
-        <a href="/enfoque-manual/" style="border:none;"><img src="enfoque.jpg" alt="Próximo lanzamiento: Enfoque Manual"></a>
-        <p class="album-title"><a href="/enfoque-manual/">Enfoque Manual</a></p>
-        <p class="platforms">Disponible — 3 de julio de 2026</p>
-    </div>
-
-    <div class="album">
-        <a href="/acapulco/" style="border:none;"><img src="acapulco.jpg" alt="Próximo lanzamiento: Acapulco"></a>
-        <p class="album-title"><a href="/acapulco/">Acapulco, El verano que no fue</a></p>
-        <p class="platforms">Disponible — 14 de agosto de 2026</p>
-    </div>
-
-    <div class="album">
-        <a href="/tercera-persona/" style="border:none;"><img src="tercera.jpg" alt="Próximo lanzamiento: Tercera Persona"></a>
-        <p class="album-title"><a href="/tercera-persona/">Tercera Persona</a></p>
-        <p class="platforms">Disponible — 11 de septiembre de 2026</p>
-    </div>
-
-    <div class="album">
-        <a href="/calle/" style="border:none;"><img src="calle.jpg" alt="Próximo lanzamiento: Mi Calle"></a>
-        <p class="album-title"><a href="/calle/">Mi Calle</a></p>
-        <p class="platforms">Disponible — 30 de septiembre de 2026</p>
-    </div>
-
-    <div class="album">
-        <a href="/medallo/" style="border:none;"><img src="medallo.jpg" alt="Próximo lanzamiento: Todos Somos Medallo"></a>
-        <p class="album-title"><a href="/medallo/">Todos Somos Medallo</a></p>
-        <p class="platforms">Disponible — 6 de noviembre de 2026</p>
-    </div>
-
-    <div class="album">
-        <a href="/luz/" style="border:none;"><img src="luz.jpg" alt="Próximo lanzamiento: Luz Prestada"></a>
-        <p class="album-title"><a href="/luz/">Luz Prestada</a></p>
-        <p class="platforms">Disponible — 18 de diciembre de 2026</p>
-    </div>
-
 </main>
 
 <footer>
-    <img src="https://lubezky.com/foto-sergio.jpg" alt="Sergio Lubezky A." class="profile-img">
-    
-    <a href="https://lubezky.com" class="name-link">
-        <span class="name">Sergio Lubezky A.</span>
-    </a>
-
-    <div class="footer-bio">
-        <p>
-            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-            Exploro la <a href="https://inteligencia.com">Inteligencia</a>, 
-            la <a href="https://liderazgointerino.com">Dirección Interina</a>, 
-            la narrativa visual en <a href="https://coachdefoto.com">Coach de Foto</a> 
-            y la música como otra forma de <a href="https://musica.sergiolubezky.com">comunicar</a>, 
-            bajo una misma premisa: entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
-        </p>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h3>Sergio Lubezky A.</h3>
+            <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro cómo los sistemas complejos, los equipos de trabajo y las ideas colectivas se coordinan para transformar crisis operativas en ventajas estratégicas resilientes.</p>
+            <div class="footer-socials">
+                <a href="https://music.amazon.com.mx/artists/B0GDNRJZJ8/sergio-lubezky" target="_blank">Amazon</a>
+                <a href="https://music.apple.com/mx/artist/sergio-lubezky/1865741434" target="_blank">Apple</a>
+                <a href="https://open.spotify.com/artist/5pMlk0pQ7tWiaBDrhXihpJ" target="_blank">Spotify</a>
+                <a href="https://www.youtube.com/@SergioLubezkyMusic" target="_blank">YouTube</a>
+                <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Discografía</h3>
+            <ul>
+                <li><a href="/todo-lo-que-soy/">Todo lo que Soy</a></li>
+                <li><a href="/aqui-estoy/">Aquí Estoy</a></li>
+                <li><a href="/a-solas-conmigo/">A Solas Conmigo</a></li>
+                <li><a href="https://lubezky.com/mapa/">Mapa del Ecosistema</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Ecosistema</h3>
+            <ul>
+                <li><a href="https://lubezky.com">Lubezky.com</a></li>
+                <li><a href="https://inteligencia.com">Inteligencia</a></li>
+                <li><a href="https://liderazgointerino.com">Liderazgo Interino</a></li>
+                <li><a href="https://coachdefoto.com">Coach de Foto</a></li>
+                <li><a href="https://elmismobarco.com">El Mismo Barco</a></li>
+                <li><a href="https://unnuevopuntodevista.com">Un Nuevo Punto de Vista</a></li>
+                <li><a href="https://musica.sergiolubezky.com/" class="current-location">Música</a></li>
+            </ul>
+        </div>
     </div>
-    
-    <ul class="social-nav">
-        <li><a href="https://music.amazon.com.mx/artists/B0GDNRJZJ8/sergio-lubezky" target="_blank">Amazon Music</a></li>
-        <li><a href="https://music.apple.com/mx/artist/sergio-lubezky/1865741434" target="_blank">Apple Music</a></li>
-        <li><a href="http://googleusercontent.com/spotify.com/8" target="_blank">Spotify</a></li>
-        <li><a href="https://www.youtube.com/@SergioLubezkyMusic" target="_blank">YouTube</a></li>
-        <li><a href="https://lubezky.com">Lubezky.com</a></li>
-    </ul>
+    <div class="footer-bottom">
+        <p>© 2026 Sergio Lubezky A. Todos los derechos reservados.</p>
+    </div>
 </footer>
 
 </body>
