@@ -1,81 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://musica.sergiolubezky.com/</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.00</priority>
+    <lastmod>2026-11-25</lastmod>
+    <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://musica.sergiolubezky.com/todo-lo-que-soy</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://musica.sergiolubezky.com/todo-lo-que-soy/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://musica.sergiolubezky.com/aqui-estoy</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://musica.sergiolubezky.com/aqui-estoy/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://musica.sergiolubezky.com/a-solas-conmigo</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://musica.sergiolubezky.com/a-solas-conmigo/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://musica.sergiolubezky.com/veces</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://musica.sergiolubezky.com/veces/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://musica.sergiolubezky.com/enfoque-manual</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://musica.sergiolubezky.com/enfoque-manual/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://musica.sergiolubezky.com/acapulco</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://musica.sergiolubezky.com/acapulco/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://musica.sergiolubezky.com/tercera-persona</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://musica.sergiolubezky.com/tercera-persona/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://musica.sergiolubezky.com/calle</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://musica.sergiolubezky.com/calle/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://musica.sergiolubezky.com/medallo</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://musica.sergiolubezky.com/medallo/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://musica.sergiolubezky.com/luz</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://musica.sergiolubezky.com/luz/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <priority>0.8</priority>
   </url>
-
 </urlset>
